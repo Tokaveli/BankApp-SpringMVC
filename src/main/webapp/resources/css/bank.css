@@ -1,0 +1,297 @@
+@CHARSET "UTF-8";
+
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	font: 16px Roboto, sans-serif;
+	color: #424242;
+	background-color: #FFF;
+}
+
+a, a:hover {
+	color: #42A5F5;
+	text-decoration: none;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #FFF;
+	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+	z-index: 10;
+}
+
+header a, footer a {
+	color: #616161;
+}
+
+header a:hover, footer a:hover {
+	text-decoration: none;
+}
+
+header > .container > h1 {
+	display: table;
+	margin: 1.25rem auto;
+}
+
+footer {
+	padding: 1rem 0 2rem;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+nav {
+	display: table;
+	margin: 1rem auto;
+}
+
+nav > a {
+	float: left;
+	margin: 0 0.75rem;
+}
+
+.btn {
+	padding: 0.5rem 1rem;
+	border: none;
+	border-radius: 2px;
+	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+.btn-primary {
+	background-color: #42A5F5;
+}
+
+.btn-primary:hover {
+	background-color: #2196F3;
+}
+
+.page {
+	margin-top: 7.0625rem;
+	background-color: #F5F5F5;
+}
+
+.home,
+.about-us,
+.contact,
+.login,
+.login-success,
+.register,
+.register-success,
+.offer,
+.privacy-policy,
+.sitemap,
+.my-account,
+.my-account-password,
+.my-account-password-success,
+.my-account-deposits,
+.my-account-deposits-open,
+.my-account-deposits-open-success,
+.my-account-transfers,
+.my-account-transfers-send,
+.my-account-transfers-send-success,
+.my-account-debit-cards-pin,
+.my-account-debit-cards-pin-success,
+.my-account-prepaids-send,
+.my-account-prepaids-send-success,
+.my-account-errands,
+.my-account-errands-send,
+.my-account-errands-send-success {
+	padding: 12rem 0;
+}
+
+.hero {
+	height: 17rem;
+	margin: -12rem 0 3rem;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+	background-image: url(/bank/resources/img/hero.jpg);
+	background-position: 0 36%;
+	background-size: cover;
+}
+
+.input-group-addon > i {
+	float: left;
+	font-size: 20px;
+}
+
+.login-form {
+	max-width: 300px;
+	margin: auto;
+}
+
+.login-form .input-group {
+	margin: 1.5rem 0;
+}
+
+.register-form {
+	max-width: 600px;
+	margin: auto;
+}
+
+.register-form > input {
+	margin: 1rem 0;
+}
+
+.register-submit {
+	font-size: 1.25rem;
+}
+
+.logo > a > i {
+	position: relative;
+	top: 3px;
+	font-size: 32px;
+}
+
+.contact > h2 > i {
+	position: relative;
+	top: 6px;
+	right: 2px;
+	font-size: inherit;
+}
+
+.help > h3 > i {
+	position: relative;
+	top: 4px;
+	right: 2px;
+	font-size: inherit;
+}
+
+.phone-number > h3 > i {
+	position: relative;
+	top: 4px;
+	right: 2px;
+	font-size: inherit;
+}
+
+.offer-account {
+	max-width: 47rem;
+	margin: auto;
+}
+
+.free {
+	color: #42A5F5;
+}
+
+.footer-links > a {
+	margin-right: 1rem;
+}
+
+.footer-inner {
+	position: relative;
+}
+
+.back-to-top {
+	position: absolute;
+	top: -70px;
+	right: 0;
+}
+
+.back-to-top-text {
+	margin: 0;
+}
+
+.back-to-top-text:hover {
+	color: #42A5F5;
+	cursor: pointer;
+}
+
+.back-to-top-text > i {
+	position: relative;
+	top: 10px;
+	font-size: 2rem;
+}
+
+.copyright > i {
+	position: relative;
+	top: 2px;
+	font-size: inherit;
+}
+
+.sitemap-links > li {
+	margin: 0.5rem 0 0 2.6rem;
+}
+
+.programmers {
+	margin-left: 5.2rem;
+}
+
+.error {
+	color: #F44336;
+}
+
+.my-account-top strong {
+	margin-left: 0.5rem;
+}
+
+.my-account-top p {
+	margin-top: 0.8rem;
+}
+
+.my-account-details {
+	margin-left: 5rem;
+	text-align: left;
+}
+
+.my-account-details td {
+	padding: 0.5rem;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.my-account-debit-card-details {
+	margin-left: 5rem;
+	text-align: left;
+}
+
+.my-account-debit-card-details td {
+	padding: 0.2rem 0.4rem;
+}
+
+.my-account-password > input {
+	margin: 1rem 0;
+}
+
+.my-deposits-details {
+	margin-left: 2rem;
+}
+
+.my-deposits-details td,
+.my-deposits-details th {
+	padding: 0.5rem 1rem;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.my-transfers-details {
+	margin-left: 2rem;
+}
+
+.my-transfers-details td,
+.my-transfers-details th {
+	padding: 0.5rem 1rem;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.my-account-password-form,
+.my-account-deposits-open-form,
+.my-account-transfers-send-form,
+.my-account-debit-cards-pin-form,
+.my-account-prepaids-send-form,
+.my-account-errands-send-form {
+	max-width: 300px;
+	margin: auto;
+}
+
+.my-account-debit-cards-pin > input {
+	margin: 1rem 0;
+}
+
+.my-errands-details {
+	margin-left: 10rem;
+}
+
+.my-errands-details td,
+.my-errands-details th {
+	padding: 0.5rem 1rem;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
